@@ -37,8 +37,9 @@ $ npm install
 # development
 $ npm run start
 
-# watch mode
-$ npm run start:dev
+# hot-reload (watch mode – tự động build + restart khi sửa file)
+$ npm run dev
+# hoặc: npm run start:dev
 
 # production mode
 $ npm run start:prod
