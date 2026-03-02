@@ -226,5 +226,8 @@ create(@Body() body: { name: string }) {
 - **Bài 5:** [PRACTICE-05-INTERCEPTOR-PIPE.md](./PRACTICE-05-INTERCEPTOR-PIPE.md) – Interceptor, Custom Pipe.
 - **Bài 6:** [PRACTICE-06-EXCEPTION-FILTER-CONFIG.md](./PRACTICE-06-EXCEPTION-FILTER-CONFIG.md) – Exception Filter, ConfigModule.
 - **Bài 7:** [PRACTICE-07-SCOPE-TESTING.md](./PRACTICE-07-SCOPE-TESTING.md) – Provider scope (REQUEST), Unit test (service + controller mock).
+- **Bài 8:** [PRACTICE-08-CUSTOM-DECORATORS.md](./PRACTICE-08-CUSTOM-DECORATORS.md) – Custom decorators (param, composite), Reflector, SetMetadata.
+- **Bài 9:** [PRACTICE-09-SHARED-MODULES.md](./PRACTICE-09-SHARED-MODULES.md) – Shared/Common module, export/import, @Global(), re-export.
+- **Bài 10:** [PRACTICE-10-EVENTS-VERSIONING.md](./PRACTICE-10-EVENTS-VERSIONING.md) – EventEmitter (emit/OnEvent), API versioning (URI).
 
 Bạn cứ làm xong từng bước rồi chạy và gọi API kiểm tra. Nếu muốn, mình có thể tạo sẵn code mẫu cho từng bước trong repo để bạn so sánh.

@@ -175,6 +175,10 @@ npm run test -- items.controller.spec
 
 ---
 
+## Gợi ý bài tiếp theo
+
+- **Bài 8:** [PRACTICE-08-CUSTOM-DECORATORS.md](./PRACTICE-08-CUSTOM-DECORATORS.md) – Custom param decorator, composite decorator (@Public), Reflector.
+
 ## Gợi ý mở rộng
 
 - E2E test: dùng `test/app.e2e-spec.ts`, gọi HTTP thật qua `supertest`, test toàn bộ luồng.
