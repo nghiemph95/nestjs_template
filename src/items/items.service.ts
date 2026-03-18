@@ -17,8 +17,9 @@ export class ItemsService {
   constructor(private readonly eventEmitter: EventEmitter2) { }
 
   findAll(): Item[] {
-    this.eventEmitter.emit('item.findAll', this.items);
-    return [...this.items];
+    const sorted = [...this.items].sort((a, b) => a.id - b.id);
+    this.eventEmitter.emit('item.findAll', sorted);
+    return sorted;
   }
 
   findOne(id: number): Item | null {
