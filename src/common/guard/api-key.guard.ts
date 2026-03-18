@@ -28,7 +28,7 @@ export class ApiKeyGuard implements CanActivate {
     const key = request.headers['x-api-key'];
     const provided = Array.isArray(key) ? key[0] : key;
     if (provided !== this.apiKey) {
-      throw new ForbiddenException('API Key không hợp lệ, hãy thử lại');
+      throw new ForbiddenException('API Key không hợp lệ');
     }
     return true;
   }
