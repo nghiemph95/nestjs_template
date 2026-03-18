@@ -13,7 +13,7 @@ import { IS_PUBLIC_KEY } from '../decorators/public.decorator';
 export class ApiKeyGuard implements CanActivate {
   private readonly apiKey = 'my-secret-api-key';
 
-  constructor(private readonly reflector: Reflector) {}
+  constructor(private readonly reflector: Reflector) { }
 
   canActivate(context: ExecutionContext): boolean {
     const isPublic = this.reflector.getAllAndOverride<boolean>(IS_PUBLIC_KEY, [
@@ -28,7 +28,7 @@ export class ApiKeyGuard implements CanActivate {
     const key = request.headers['x-api-key'];
     const provided = Array.isArray(key) ? key[0] : key;
     if (provided !== this.apiKey) {
-      throw new ForbiddenException('API Key không hợp lệ');
+      throw new ForbiddenException('API Key không hợp lệ, hãy thử lại');
     }
     return true;
   }
